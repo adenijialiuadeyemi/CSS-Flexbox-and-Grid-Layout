@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    Font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+/* Styling for the Flexbox Layout*/
+.flex-main{
+    width:50%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;  
+}
+.left-container{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    padding:2em;
+}
+button{
+    margin-top:70px;
+    border-radius:50px;
+    padding:10px;
+    border:none;
+    width:75%;
+}
+.left-container button{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+.middle-container{
+    background-color:hsl(184, 100%, 22%);
+    padding:2em;
+}
+.middle-container button{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+}
+.right-container{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    padding:2em;
+}
+.right-container button{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5em;
+    text-align:left;
+}
+h2{
+    color: hsl(0, 0%, 95%);
+    margin-top:20px;
+    margin-bottom:20px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size:2.0em;
+}
+img{
+    width:45px;
+    height:30px;
+}
+@media only screen and (max-width: 375px) {
+    .flex-main{
+        width:50%;
+        margin:auto;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        height:100vh; 
+    }
+    .left-container{
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: .5em;
+        border-bottom-left-radius: .5em;
+        padding:.5em;
+    }
+    button{
+        margin-top:70px;
+        border-radius:25px;
+        padding:5px;
+        border:none;
+        width:75%;
+    }
+    .left-container button{
+        background-color: hsl(0, 0%, 95%);
+        color: hsl(31, 77%, 52%);
+    }
+    .middle-container{
+        background-color:hsl(184, 100%, 22%);
+        padding:1em;
+    }
+    .middle-container button{
+        background-color: hsl(0, 0%, 95%);
+        color: hsl(184, 100%, 22%);
+    }
+    .right-container{
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+        padding:1em;
+    }
+    .right-container button{
+        background-color: hsl(0, 0%, 95%);
+        color: hsl(179, 100%, 13%);
+    }
+    p{
+        color: hsla(0, 0%, 100%, 0.75);
+        line-height: 0.75em;
+        text-align:left;
+    }
+    h2{
+        color: hsl(0, 0%, 95%);
+        margin-top:20px;
+        margin-bottom:20px;
+        font-family: 'Big Shoulders Display', cursive;
+        font-size:1.0em;
+    }     
+    img{
+        width:25px;
+        height:15px;
+    }
+  }
+/*Stylings for the GridBox Layout*/
+  .grid-body{
+    width:50%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+  }
+  .grid-main{
+    display:grid;
+    grid-template-areas:
+    'b1 b1 b1 b2 b2'
+    'b3 b3 b4 b4 b4'
+    'b3 b3 b5 b5 b5'
+    ;
+    gap:10px;
+  }
+  .grid-main div{
+    padding:20px 0;
+  }
+  .box-1{
+    background-color:brown;
+    grid-area:b1;
+  }
+  .box-2{
+    background-color:yellow;
+    grid-area:b2;
+  }
+  .box-3{
+    background-color:green;
+    grid-area:b3;
+  }
+  .box-4{
+    background-color:cyan;
+    grid-area:b4;
+  }
+  .box-5{
+    background-color:cyan;
+    grid-area:b5;
+  }
